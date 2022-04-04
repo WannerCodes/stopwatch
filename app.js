@@ -22,7 +22,7 @@ function updateTime(){
     if(minutes < 10){
         minutes = "0" + minutes;
     }
-
+    
     //Updating html with timer
     timePage.innerHTML = `${minutes}:${seconds}:${ms}`;
 }

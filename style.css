@@ -6,21 +6,25 @@
 
 section {
   height: 100vh;
-  background-color: rgb(39, 41, 68);
+  background-color: white;
   font-family: sans-serif;
 }
 
 .title {
-  color: rgb(224, 224, 224);
+  color: rgb(102, 102, 102);
   height: 10vh;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   font-size: 4vh;
 }
 
+lime {
+  color: rgb(132, 191, 85);
+}
+
 .time {
-  color: rgb(224, 224, 224);
+  color: rgb(102, 102, 102);
   height: 20vh;
   display: flex;
   justify-content: space-around;
@@ -30,20 +34,17 @@ section {
 
 .buttons {
   display: flex;
-  text-align: center;
-  align-items: center;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 button {
-  align-items: center;
   width: 150px;
   height: 50px;
-  background: none;
   border: none;
-  color: rgb(224, 224, 224);
+  color: white;
   font-size: 20px;
-  background: rgb(45, 117, 96);
-  border-radius: 3px;
+  background: rgb(132, 191, 85);
+  border-radius: 30px;
   cursor: pointer;
+  margin: 2vh;
 }
