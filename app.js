@@ -1,5 +1,4 @@
 const start = document.querySelector(".start");
-const pause = document.querySelector(".pause");
 const restart = document.querySelector(".restart");
 let timePage = document.querySelector(".time");
 
@@ -28,31 +27,20 @@ function updateTime(){
     timePage.innerHTML = `${minutes}:${seconds}:${ms}`;
 }
 
-//sets all buttons to "clickable" color
-function resetButtons(){
-    start.style.backgroundColor = "rgb(45, 117, 96)";
-    pause.style.backgroundColor = "rgb(45, 117, 96)";
-}
 
 //Starts timer, as long as timer is inactive
 start.addEventListener("click", function(){
     if(timerId == null){
-        resetButtons();
-        start.style.backgroundColor = "gray";
+        start.innerHTML = "Pause";
         timerId = setInterval(updateTime, 10);
+    } else{
+        start.innerHTML = "Start";
+        timerId = clearInterval(timerId);
     }
-})
-
-//pauses timer and sets timerId = null
-pause.addEventListener("click", function(){
-    resetButtons();
-    pause.style.backgroundColor = "gray";
-    timerId = clearInterval(timerId);
 })
 
 //resets all parts of the stopwatch
 restart.addEventListener("click", function(){
-    resetButtons();
     timerId = clearInterval(timerId);
     time = 0;
     timePage.innerHTML = "00:00:00";
