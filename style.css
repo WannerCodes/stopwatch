@@ -12,18 +12,20 @@ section {
 
 .title {
   color: rgb(224, 224, 224);
-  height: 20vh;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.time {
-  color: rgb(224, 224, 224);
   height: 10vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  font-size: 4vh;
+}
+
+.time {
+  color: rgb(224, 224, 224);
+  height: 20vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 10vh;
 }
 
 .buttons {
